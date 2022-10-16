@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML</title>
+<style> 
+  .column {
+    height: 320px;
+    width:  33.33%;
+    padding: 5px;
+    margin: 5px;
+    background-color: #cccccc;
+    text-align: center;
+  }
+  .container {
+     display: flex;
+  } 
+</style>
+</head>  
+<body>
+    <h2> Text summary!</h2>
+  <div class="container">
+     <div class="column">
+       <h2> Orginal File </h2>
+       <img src="static/{{image_path}}" 
+        alt="Image";/>
+     </div>
+     <div class="column">
+      <h2> OCR Extraction </h2>
+     <p> {{ocr_text}} </p>
+     </div>
+     <div class="column">
+       <h2> Summary using cohere </h2>
+     <p> {{summary}} </p>
+     </div>
+  </div>
+</body>
+</html>
